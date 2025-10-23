@@ -3,76 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>متجري الإلكتروني</title>
+    <title>متجري العصري</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
             margin: 0;
             padding: 0;
+            background-color: #fff8e1;
+            color: #333;
         }
         header {
-            background-color: #ff69b4;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
+            background-color: #FFD700;
+            color: #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
+        header h1 { margin: 0; font-size: 24px; }
+        nav a { margin-left: 20px; text-decoration: none; color: #333; font-weight: bold; }
+        nav a:hover { color: #fff; }
+
         .products {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            margin: 20px;
-            gap: 20px;
+            margin: 40px 20px;
+            gap: 25px;
         }
         .product-card {
             background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
+            border-radius: 10px;
             width: 250px;
             text-align: center;
             padding: 15px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.2);
         }
         .product-card img {
             width: 100%;
             height: auto;
-            border-radius: 8px;
+            border-radius: 10px;
         }
-        .product-card h3 {
-            margin: 10px 0 5px;
-        }
-        .product-card p {
-            color: #555;
-            margin: 5px 0;
-        }
+        .product-card h3 { margin: 10px 0 5px; font-size: 18px; }
+        .product-card p { color: #555; margin: 5px 0 10px; }
         .product-card button {
-            background-color: #ff69b4;
-            color: white;
+            background-color: #FFD700;
+            color: #333;
             border: none;
             padding: 10px 15px;
             border-radius: 5px;
             cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
         }
-        .product-card button:hover {
-            background-color: #ff85c1;
+        .product-card button:hover { background-color: #FFC107; }
+
+        footer {
+            background-color: #FFD700;
+            padding: 20px 30px;
+            text-align: center;
+            color: #333;
+            margin-top: 40px;
         }
+        footer a { color: #333; margin: 0 10px; text-decoration: none; font-weight: bold; }
+        footer a:hover { color: #fff; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>مرحبا بكم في متجري</h1>
+    <h1>متجري العصري</h1>
+    <nav>
+        <a href="#">الرئيسية</a>
+        <a href="#">منتجات</a>
+        <a href="#">عروض</a>
+        <a href="#">تواصل معنا</a>
+    </nav>
 </header>
 
 <div class="products">
-    <!-- بطاقة المنتج 1 -->
+    <!-- منتج 1 -->
     <div class="product-card">
-        <img src="images/Bloom.jpg" alt="Bloom">
+        <img src="images/Bloom-body.jpg" alt="Bloom">
         <h3>Bloom</h3>
+        <p>مكبر جسم</p>
         <p>السعر: 45$</p>
         <button>إضافة للسلة</button>
     </div>
+
+    <!-- منتج 2 -->
+    <div class="product-card">
+        <img src="images/Collagen-skin.jpg" alt="كولاجين">
+        <h3>كولاجين</h3>
+        <p>منتج بشرة</p>
+        <p>السعر: 60$</p>
+        <button>إضافة للسلة</button>
+    </div>
 </div>
+
+<footer>
+    <p>جميع الحقوق محفوظة &copy; 2025</p>
+    <p>
+        <a href="#">فيسبوك</a>|
+        <a href="#">إنستجرام</a>|
+        <a href="#">تويتر</a>
+    </p>
+</footer>
 
 </body>
 </html>
