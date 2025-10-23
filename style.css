@@ -23,47 +23,73 @@ header p {
 }
 
 /* قائمة التنقل */
+header nav {
+    margin-top: 10px;
+}
+
 header nav a {
     margin: 0 10px;
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #000;
 }
 
 /* قسم المنتجات */
 section#products {
     padding: 20px;
+    text-align: center;
 }
 
 .product {
     display: inline-block;
     margin: 10px;
-    padding: 10px;
+    padding: 15px;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 10px;
     text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 220px;
 }
 
 .product img {
     width: 200px;
     height: 200px;
+    border-radius: 10px;
+}
+
+.product h3 {
+    margin: 10px 0 5px 0;
+}
+
+.product p {
+    font-size: 0.9em;
+    color: #555;
 }
 
 /* نموذج الطلب */
 section#order {
     padding: 20px;
     background-color: #eee;
+    text-align: center;
 }
 
 form label {
     display: block;
-    margin: 10px 0 5px;
+    margin: 10px 0 5px 0;
 }
 
 form input, form textarea {
-    width: 100%;
-    padding: 5px;
+    width: 80%;
+    max-width: 400px;
+    padding: 8px;
     margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 /* زر الإرسال */
@@ -73,17 +99,41 @@ form button {
     padding: 10px 20px;
     cursor: pointer;
     font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #e6b800;
+}
+
+/* زر واتساب */
+a button {
+    background-color: #25D366; /* لون واتساب الأخضر */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+a button:hover {
+    background-color: #1ebe57;
 }
 
 /* قسم العروض */
 section#offers {
     padding: 20px;
+    text-align: center;
 }
 
 /* التذييل */
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     background-color: #333;
     color: #fff;
 }
