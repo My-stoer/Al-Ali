@@ -3,74 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brand Al Ali</title>
-    <link rel="stylesheet" href="style.css">
+    <title>متجري الإلكتروني</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff69b4;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+            gap: 20px;
+        }
+        .product-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 250px;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product-card h3 {
+            margin: 10px 0 5px;
+        }
+        .product-card p {
+            color: #555;
+            margin: 5px 0;
+        }
+        .product-card button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .product-card button:hover {
+            background-color: #ff85c1;
+        }
+    </style>
 </head>
 <body>
-    <!-- رأس الصفحة -->
-    <header>
-        <h1>Brand Al Ali</h1>
-        <p>مكبر جسم / بشرة | Body & Skin Enhancer</p>
-        <nav>
-            <a href="#products">المنتجات / Products</a>
-            <a href="#order">اطلب الآن / Order</a>
-            <a href="#offers">العروض / Offers</a>
-        </nav>
-    </header>
 
-    <!-- قسم المنتجات -->
-    <section id="products">
-        <h2>منتجاتنا / Our Products</h2>
-        <div class="product">
-            <img src="https://via.placeholder.com/200" alt="منتج 1 / Product 1">
-            <h3>مكبر الجسم / Body Enhancer</h3>
-            <p>وصف قصير للمنتج / Short description</p>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/200" alt="منتج 2 / Product 2">
-            <h3>مكمل البشرة / Skin Enhancer</h3>
-            <p>وصف قصير للمنتج / Short description</p>
-        </div>
-    </section>
+<header>
+    <h1>مرحبا بكم في متجري</h1>
+</header>
 
-    <!-- نموذج الطلب مع واتساب -->
-    <section id="order">
-        <h2>اطلب الآن / Order Now</h2>
-        <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
-            <label>الاسم / Name:</label>
-            <input type="text" name="name" required>
-            
-            <label>رقم الهاتف / Phone:</label>
-            <input type="text" name="phone" required>
-            
-            <label>المنتج / Product:</label>
-            <input type="text" name="product" required>
-            
-            <label>ملاحظات / Notes:</label>
-            <textarea name="notes"></textarea>
-            
-            <button type="submit">أرسل الطلب / Send Order</button>
-        </form>
+<div class="products">
+    <!-- بطاقة المنتج 1 -->
+    <div class="product-card">
+        <img src="images/Bloom.jpg" alt="Bloom">
+        <h3>Bloom</h3>
+        <p>السعر: 45$</p>
+        <button>إضافة للسلة</button>
+    </div>
+</div>
 
-        <!-- زر واتساب -->
-        <a href="https://wa.me/9647824143857?text=مرحبا، أريد طلب المنتج" target="_blank">
-            <button>اطلب عبر واتساب / Order via WhatsApp</button>
-        </a>
-    </section>
-
-    <!-- قسم العروض -->
-    <section id="offers">
-        <h2>العروض / Offers</h2>
-        <p>خصومات حصرية / Exclusive Discounts</p>
-        <ul>
-            <li>اشتري 2 واحصل على 1 مجاناً / Buy 2 get 1 free</li>
-            <li>خصم 10٪ لأول طلب / 10% off first order</li>
-        </ul>
-    </section>
-
-    <!-- تذييل الصفحة -->
-    <footer>
-        <p>© 2025 Brand Al Ali | جميع الحقوق محفوظة / All Rights Reserved</p>
-    </footer>
 </body>
 </html>
